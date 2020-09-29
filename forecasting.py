@@ -122,7 +122,7 @@ model.compile(loss=keras.losses.Huber(),
               optimizer=optimizer,
               metrics=["mae"])
 early_stopping = keras.callbacks.EarlyStopping(patience=10)
-model.fit(train_set, epochs=200,
+model.fit(train_set, epochs=150,
           validation_data=valid_set,
           callbacks=[early_stopping])
 
@@ -188,7 +188,7 @@ model.compile(loss=keras.losses.Huber(),
               optimizer=optimizer,
               metrics=["mae"])
 early_stopping = keras.callbacks.EarlyStopping(patience=10)
-model.fit(train_set, epochs=500,
+model.fit(train_set, epochs=150,
           validation_data=valid_set,
           callbacks=[early_stopping])
 
